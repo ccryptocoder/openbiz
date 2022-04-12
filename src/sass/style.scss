@@ -1,0 +1,16 @@
+@import 'libs/bootstrap-reboot';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+@import 'base/variables';
+@import 'base/mixins';
+
+@import 'blocks/container';
+@import 'blocks/btn';
+@import 'blocks/header';
+@import 'blocks/promo';
