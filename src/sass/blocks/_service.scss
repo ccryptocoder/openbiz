@@ -55,10 +55,13 @@
         }
     }
     &__tab {
-        margin-top: 285px;
+		padding-top: 70px;
+		position: relative;
+		z-index: 0;
         background: url('../img/service-bg.png') center center/cover repeat-y;
     }
     &__item {
+		margin: 215px 80px 0;
         width: 750px;
         position: relative;
         padding: 35px 35px 30px;
@@ -161,6 +164,49 @@
         }
         &-btn {
             margin-right: 12px;
+        }
+    }
+    &__item {
+        &:nth-child(3n+2) {
+			margin-left: auto;
+            .si {
+                &-title {
+                    left: unset;
+					right: 0;
+					text-align: right;
+                    &::before {
+                        content: url('../img/purple-splash.svg');
+						left: -72px;
+                    }
+                }
+				&-list {
+					&_tick {
+						li {
+							&::before {
+								content: url('../../icons/tick-purple.svg');
+							}
+						}
+					}
+					&_dot {
+						li {
+							&::before {
+								content: url('../../icons/dot-purple.svg');
+							}
+						}
+					}
+				}
+            }
+        }
+    }
+	&__item {
+        &:nth-child(3n+3) {
+            .si {
+                &-title {
+                    &::before {
+                        content: url('../img/blue-splash.svg');
+                    }
+                }
+            }
         }
     }
 }
