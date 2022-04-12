@@ -54,4 +54,113 @@
             }
         }
     }
+    &__tab {
+        margin-top: 285px;
+        background: url('../img/service-bg.png') center center/cover repeat-y;
+    }
+    &__item {
+        width: 750px;
+        position: relative;
+        padding: 35px 35px 30px;
+        background: linear-gradient(135.37deg, rgba(0, 0, 0, 0.4) 4.29%, rgba(255, 255, 255, 0.4) 95.6%), #F1F3F5;
+        background-blend-mode: soft-light, normal;
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        border-radius: 20px;
+        box-shadow: -9px -9px 16px rgba(250, 251, 255, 0.3), 9px 9px 16px rgba(166, 171, 189, 0.4);
+    }
+    .si {
+        &-title {
+            position: absolute;
+            top: -80px;
+            left: 0;
+            width: 170px;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 130%; /* or 21px */
+            color: #FFFFFF;
+            &::before {
+                content: url('../img/orange-splash.svg');
+                position: absolute;
+                top: -92px;
+                left: -92px;
+                z-index: -1;
+            }
+        }
+        &-main {
+            display: flex;
+            justify-content: space-between;
+        }
+        &-descr {
+            width: 335px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 130%; /* or 21px */
+            color: #939393;
+        }
+        &-label {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 16px;
+            color: #939393;
+            &:not(:first-child) {
+                margin-top: 35px;
+            }
+        }
+        &-text {
+            margin-top: 5px;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 21px;
+            color: #154D54;
+        }
+        &-more {
+            padding-top: 20px;
+        }
+        &-subtitle {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 16px;
+            color: #154D54;
+        }
+        &-list {
+            margin-top: 18px;
+            margin-bottom: 40px;
+            display: grid;
+            grid-template-columns: repeat(2, 290px);
+            grid-template-rows: auto;
+            grid-auto-rows: auto;
+            row-gap: 8px;
+            column-gap: 55px;
+            list-style: none;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            color: #939393;
+            &_tick {
+                li {
+                    position: relative;
+                    &::before {
+                        content: url('../../icons/tick-orange.svg');
+                        position: absolute;
+                        left: -22px;
+                        top: -2px;
+                    }
+                }
+            }
+            &_dot {
+                li {
+                    position: relative;
+                    &::before {
+                        content: url('../../icons/dot-orange.svg');
+                        position: absolute;
+                        left: -18px;
+                        top: -2px;
+                    }
+                }
+            }
+        }
+        &-btn {
+            margin-right: 12px;
+        }
+    }
 }
