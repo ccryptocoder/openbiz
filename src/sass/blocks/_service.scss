@@ -76,7 +76,7 @@
             position: absolute;
             top: -80px;
             left: 0;
-            width: 170px;
+            width: 177px;
             font-weight: 700;
             font-size: 16px;
             line-height: 130%; /* or 21px */
@@ -94,7 +94,7 @@
             justify-content: space-between;
         }
         &-descr {
-            width: 335px;
+            width: 360px;
             font-weight: 400;
             font-size: 16px;
             line-height: 130%; /* or 21px */
@@ -197,15 +197,29 @@
 				}
             }
         }
-    }
-	&__item {
-        &:nth-child(3n+3) {
+		&:nth-child(3n+3) {
             .si {
                 &-title {
                     &::before {
                         content: url('../img/blue-splash.svg');
                     }
                 }
+				&-list {
+					&_tick {
+						li {
+							&::before {
+								content: url('../../icons/tick-blue.svg');
+							}
+						}
+					}
+					&_dot {
+						li {
+							&::before {
+								content: url('../../icons/dot-blue.svg');
+							}
+						}
+					}
+				}
             }
         }
     }
