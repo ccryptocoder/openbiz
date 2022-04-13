@@ -4,6 +4,7 @@
     background: linear-gradient(95.42deg, #F2F4F8 -13.96%, #C2C2C2 103.35%);
     border-radius: 50px;
     &__grid {
+        margin-top: 70px;
         display: grid;
         grid-template-columns: repeat(6, 165px);
         grid-template-rows: auto;
@@ -95,6 +96,34 @@
                     box-shadow: 19px 19px 48px rgba(39, 46, 77, 0.5), inset 1px 1px 2px rgba(155, 184, 255, 0.3), inset -1px -1px 2px rgba(39, 46, 77, 0.5);
                     &::after {
                         content: url('../img/stage4.svg');
+                    }
+                }
+            }
+        }
+        &:nth-child(5) {
+            .stages {
+                &__num {
+                    color: #A14F9F;
+                }
+                &__round {
+                    background: linear-gradient(135deg, #A351A5 0%, #D5527E 100%);
+                    box-shadow: 19px 19px 48px rgba(66, 32, 65, 0.5), inset 1px 1px 2px rgba(255, 130, 255, 0.3), inset -1px -1px 2px rgba(66, 32, 65, 0.5);
+                    &::after {
+                        content: url('../img/stage5.svg');
+                    }
+                }
+            }
+        }
+        &:nth-child(6) {
+            .stages {
+                &__num {
+                    color: #FFAE2E;
+                }
+                &__round {
+                    background: linear-gradient(132.14deg, #FFE23D 10.08%, #FF9F29 81.69%);
+                    box-shadow: 19px 19px 48px rgba(97, 86, 23, 0.5), inset 1px 1px 2px rgba(255, 255, 93, 0.3), inset -1px -1px 2px rgba(97, 86, 23, 0.5);
+                    &::after {
+                        content: url('../img/stage6.svg');
                     }
                 }
             }
