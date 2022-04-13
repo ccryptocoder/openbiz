@@ -1,0 +1,41 @@
+.conf {
+    padding-top: 130px;
+    padding-bottom: 170px;
+    &__grid {
+        display: grid;
+        grid-template-columns: 405px 450px;
+        grid-template-rows: auto;
+        column-gap: 100px;
+        place-content: center;
+        align-items: center;
+    }
+    &__round {
+        display: grid;
+        place-content: center;
+        width: 405px;
+        height: 405px;
+        background: linear-gradient(50.24deg, #FFFFFF 29.09%, #F2F4F8 80.42%);
+        box-shadow: 10px 10px 20px rgba(255, 255, 255, 0.7);
+        border-radius: 299px;
+    }
+    &__title {
+        text-align: left;
+    }
+    &__text {
+        margin-top: 25px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        color: #939393;
+    }
+    &__download-text {
+        margin-top: 65px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 16px;
+        color: #154D54;
+    }
+    &__btn {
+        margin-top: 25px;
+    }
+}
