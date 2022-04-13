@@ -10,6 +10,12 @@ body {
     background: #F2F4F8;
 }
 
+.conf-reviews {
+    position: relative;
+    z-index: 1;
+    background: url('../img/service-bg.png') center center/contain repeat-y;
+}
+
 @import 'base/variables';
 @import 'base/mixins';
 
