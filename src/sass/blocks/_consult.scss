@@ -1,0 +1,67 @@
+.consult {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 80px 0 55px;
+    background: url('../img/consult-bg.jpg') center/cover no-repeat;
+    border-radius: 40px;
+    &__subtitle {
+        margin-top: 12px;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+        color: #154D54;
+    }
+    &__text {
+        margin-top: 12px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        color: #154D54;
+    }
+    &__form {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        input[type=text], input[type=tel], input[type=email] {
+            margin-bottom: 20px;
+            width: 300px;
+            height: 50px;
+            padding: 20px;
+            background: #F2F4F8;
+            border: none;
+            outline: none;
+            border-radius: 60px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            color: #939393;
+        }
+    }
+    &__submit {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        input[type=submit] {
+            display: inline-block;
+            padding: 15px 40px;
+            background: linear-gradient(135.37deg, rgba(0, 0, 0, 0.4) 4.29%, rgba(255, 255, 255, 0.4) 95.6%), #FFA902;
+            background-blend-mode: soft-light, normal;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            box-sizing: border-box;
+            box-shadow: -9px -9px 16px rgba(250, 251, 255, 0.1), 9px 9px 16px rgba(166, 171, 189, 0.3);
+            border-radius: 55px;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 19px;
+            color: #154D54;
+        }
+    }
+    &__radio {
+        margin-top: 32px;
+        display: block;
+        text-align: center;
+    }
+}
