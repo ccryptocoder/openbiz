@@ -100,7 +100,7 @@
             justify-content: space-between;
         }
         &-descr {
-            width: 360px;
+            width: 385px;
             font-weight: 400;
             font-size: 16px;
             line-height: 130%; /* or 21px */
@@ -157,11 +157,16 @@
             font-size: 14px;
             line-height: 16px;
             color: #939393;
+			li {
+				&:not(:first-child) {
+					margin-top: 5px;
+				}
+			}
             &_tick {
                 li {
                     position: relative;
                     &::before {
-                        content: url('../../icons/tick-orange.svg');
+                        content: url('../icons/tick-orange.svg');
                         position: absolute;
                         left: -22px;
                         top: -2px;
@@ -172,10 +177,21 @@
                 li {
                     position: relative;
                     &::before {
-                        content: url('../../icons/dot-orange.svg');
+                        content: url('../icons/dot-orange.svg');
                         position: absolute;
                         left: -18px;
                         top: -2px;
+                    }
+                }
+            }
+			&_cross {
+                li {
+                    position: relative;
+                    &::before {
+						content: url('../icons/cross-cyan.svg');
+                        position: absolute;
+                        left: -20px;
+    					top: -1px;
                     }
                 }
             }
@@ -201,14 +217,14 @@
 					&_tick {
 						li {
 							&::before {
-								content: url('../../icons/tick-purple.svg');
+								content: url('../icons/tick-purple.svg');
 							}
 						}
 					}
 					&_dot {
 						li {
 							&::before {
-								content: url('../../icons/dot-purple.svg');
+								content: url('../icons/dot-purple.svg');
 							}
 						}
 					}
@@ -226,14 +242,21 @@
 					&_tick {
 						li {
 							&::before {
-								content: url('../../icons/tick-blue.svg');
+								content: url('../icons/tick-blue.svg');
 							}
 						}
 					}
 					&_dot {
 						li {
 							&::before {
-								content: url('../../icons/dot-blue.svg');
+								content: url('../icons/dot-blue.svg');
+							}
+						}
+					}
+					&_cross {
+						li {
+							&::before {
+								content: url('../icons/cross-cyan.svg');
 							}
 						}
 					}
@@ -256,14 +279,40 @@
 					&_tick {
 						li {
 							&::before {
-								content: url('../../icons/tick-gray.svg');
+								content: url('../icons/tick-gray.svg');
 							}
 						}
 					}
 					&_dot {
 						li {
 							&::before {
-								content: url('../../icons/dot-gray.svg');
+								content: url('../icons/dot-gray.svg');
+							}
+						}
+					}
+				}
+            }
+        }
+		&:nth-child(5) {
+            .si {
+                &-title {
+                    &::before {
+                        content: url('../img/cyan-splash.svg');
+						top: -102px;
+                    }
+                }
+				&-list {
+					&_tick {
+						li {
+							&::before {
+								content: url('../icons/tick-cyan.svg');
+							}
+						}
+					}
+					&_dot {
+						li {
+							&::before {
+								content: url('../icons/dot-cyan.svg');
 							}
 						}
 					}
