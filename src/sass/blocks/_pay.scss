@@ -1,0 +1,12 @@
+.pay {
+    padding-top: 1px;
+    padding-bottom: 120px;
+    &__descr {
+        margin-top: 30px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 135.4%; /* or 24px */
+        text-align: center;
+        color: #939393;
+    }
+}
