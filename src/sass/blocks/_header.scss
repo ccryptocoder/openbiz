@@ -74,6 +74,7 @@
             right: 15px;
             width: 30px;
             height: 3px;
+            border-radius: 10px;
             background: rgba(255, 255, 255, 1);
             z-index: 5;
             cursor: pointer;
@@ -83,6 +84,7 @@
                 position: absolute;
                 width: 30px;
                 height: 3px;
+                border-radius: 10px;
                 background: #FFFFFF;
                 transform: rotate(360deg);
                 transition: all .7s;
@@ -140,6 +142,16 @@
         padding: 5px 0;
     }
     .menu {
+        position: fixed;
+        height: 45px;
+        width: 100%;
+        top: 0;
+        right: 0;
+        transition: all .3s;
+        &__hamburger {
+            margin-left: auto;
+            top: -2px;
+        }
         &__list {
             width: 100vw;
         }
