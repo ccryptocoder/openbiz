@@ -1,0 +1,90 @@
+.footer {
+    padding: 120px 0 20px;
+    min-height: 455px;
+    &__subtitle {
+        margin-top: 15px;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 28px;
+        color: #FFA902;
+        text-align: center;
+    }
+    &__grid {
+        margin-top: 90px;
+        display: grid;
+        grid-template-columns: repeat(4, 280px);
+        grid-template-rows: auto;
+        column-gap: 20px;
+    }
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 9px 0;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        text-decoration: none;
+        color: #788184;
+        border-bottom: 1px solid #788184;
+        transition: all .3s;
+        svg {
+            margin-right: 10px;
+            path {
+                transition: all .3s;
+            }
+        }
+        &:nth-child(1) {
+            &:hover {
+                color: #FE9431;
+                border-color: #FE9431;
+                svg {
+                    path {
+                        fill: #FE9431;
+                    }
+                }
+            }
+        }
+        &:nth-child(2) {
+            &:hover {
+                color: #DA5077;
+                border-color: #DA5077;
+                svg {
+                    path {
+                        fill: #DA5077;
+                    }
+                }
+            }
+        }
+        &:nth-child(3) {
+            &:hover {
+                color: #4B78B3;
+                border-color: #4B78B3;
+                svg {
+                    path {
+                        fill: #4B78B3;
+                    }
+                }
+            }
+        }
+        &:nth-child(4) {
+            &:hover {
+                color: #61C8C5;
+                border-color: #61C8C5;
+                svg {
+                    path {
+                        fill: #61C8C5;
+                    }
+                }
+            }
+        }
+    }
+    &__cr {
+        margin-top: 95px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+        color: #939393;
+        text-align: center;
+    }
+}
