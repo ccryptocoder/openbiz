@@ -90,11 +90,32 @@
 }
 
 @media (max-width: 767px) {
-    
+    .reviews {
+        &__grid {
+            grid-template-columns: 365px;
+        }
+    }
 }
 
 @media (max-width: 575px) {
-    
+    .reviews {
+        padding-bottom: 60px;
+        &__item {
+            &-title, &-text {
+                font-size: 12px;
+                line-height: 14px;  
+            }
+            &-title {
+                margin-top: 90px;
+            }
+            &-text {
+                width: 210px;
+            }
+        }
+        &__img {
+            transform: scale(.9);
+        }
+    }
 }
 
 @media (max-width: 374px) {

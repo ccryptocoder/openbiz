@@ -28,7 +28,10 @@
 }
 
 @media (max-width: 575px) {
-    
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
 }
 
 @media (max-width: 374px) {

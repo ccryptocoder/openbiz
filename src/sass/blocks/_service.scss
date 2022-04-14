@@ -342,11 +342,90 @@
 }
 
 @media (max-width: 767px) {
-    
+    .service {
+        &__item {
+            margin: 215px auto 0;
+            width: 98%;
+        }
+        .si {
+            &-descr {
+                width: 290px;
+            }
+            &-title {
+                left: 50% !important;
+                transform: translateX(-50%) !important;
+                z-index: -1 !important;
+                text-align: center !important;
+            }
+        }
+    }
 }
 
 @media (max-width: 575px) {
-    
+    .service {
+        padding: 2px 0 90px;
+        &__group {
+            margin-top: 15px;
+            &-btn {
+                span {
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 19px;
+                }
+            }
+        }
+        &__tab {
+            padding-top: 35px;
+        }
+        &__item {
+            margin: 180px auto 0;
+            padding: 25px 15px 30px;
+            &:nth-child(4) {
+                .si {
+                    &-title {
+                        &::before {
+                            left: -88px;
+                        }
+                    }
+                }
+            }
+            .si {
+                &-main {
+                    justify-content: unset;
+                    flex-direction: column;
+                }
+                &-title {
+                    font-size: 14px;
+                    line-height: 130%; /* or 18px */
+                    &::before {
+                        transform: scale(.9);
+                    }
+                }
+                &-descr {
+                    font-size: 14px;
+                    line-height: 130%; /* or 18px */
+                }
+                &-side {
+                    margin-top: 25px;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-rows: auto auto;
+                    grid-auto-flow: column;
+                }
+                &-label {
+                    font-size: 12px;
+                    line-height: 14px;
+                    &:not(:first-child) {
+                        margin: 0;
+                    }
+                }
+                &-text {
+                    font-size: 16px;
+                    line-height: 19px;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 374px) {

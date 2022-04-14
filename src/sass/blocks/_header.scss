@@ -136,7 +136,14 @@
 }
 
 @media (max-width: 575px) {
-    
+    .header {
+        padding: 5px 0;
+    }
+    .menu {
+        &__list {
+            width: 100vw;
+        }
+    }
 }
 
 @media (max-width: 374px) {

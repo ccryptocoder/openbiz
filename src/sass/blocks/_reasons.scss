@@ -68,11 +68,37 @@
 }
 
 @media (max-width: 767px) {
-    
+    .reasons {
+        &__grid {
+            column-gap: 60px;
+        }
+    }
 }
 
 @media (max-width: 575px) {
-    
+    .reasons {
+        &__grid {
+            margin-top: 50px;
+            grid-template-columns: 190px;
+            grid-template-rows: 190px;
+            grid-auto-rows: 190px;
+            row-gap: 30px;
+        }
+        &__item {
+            width: 190px;
+            height: 190px;
+            &-descr {
+                font-size: 12px;
+                line-height: 14px;
+            }
+        }
+        &__num {
+            top: 30px;
+            right: 195px;
+            font-size: 96px;
+            line-height: 117px;
+        }
+    }
 }
 
 @media (max-width: 374px) {

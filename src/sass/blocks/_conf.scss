@@ -1,6 +1,9 @@
 .conf {
     padding-top: 130px;
     padding-bottom: 170px;
+    &__mob-title {
+        display: none;
+    }
     &__grid {
         display: grid;
         grid-template-columns: 405px 450px;
@@ -63,11 +66,72 @@
 }
 
 @media (max-width: 767px) {
-    
+    .conf {
+        padding-top: 80px;
+        padding-bottom: 80px;
+        &__round {
+            margin: 0 auto;
+            width: 250px;
+            height: 250px;
+            img {
+                width: 150px;
+                height: 150px;
+            }
+        }
+        &__grid {
+            margin-top: 35px;
+            grid-template-columns: 400px;
+            grid-template-rows: auto auto;
+            row-gap: 30px;
+        }
+        &__mob-title {
+            display: block;
+        }
+        &__title {
+            display: none;
+        }
+        &__text {
+            margin-top: 0;
+            text-align: center;
+        }
+        &__download-text {
+            margin-top: 30px;
+            text-align: center;
+        }
+        &__btn {
+            margin-top: 30px;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
 }
 
 @media (max-width: 575px) {
-    
+    .conf {
+        &__round {
+            width: 128px;
+            height: 128px;
+            img {
+                width: 81px;
+                height: 81px;
+            }
+        }
+        &__grid {
+            grid-template-columns: 1fr;
+        }
+        &__text {
+            font-size: 14px;
+            line-height: 16px;
+        }
+        &__download-text {
+            font-size: 12px;
+            line-height: 14px;
+        }
+        &__btn {
+            padding: 15px 55px;
+        }
+    }
 }
 
 @media (max-width: 374px) {

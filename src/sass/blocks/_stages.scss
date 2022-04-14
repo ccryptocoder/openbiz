@@ -155,11 +155,45 @@
 }
 
 @media (max-width: 767px) {
-    
+    .stages {
+        &__grid {
+            column-gap: 30px;
+        }
+    }
 }
 
 @media (max-width: 575px) {
-    
+    .stages {
+        &__grid {
+            grid-template-columns: 1fr;
+            row-gap: 70px;
+        }
+        &__block {
+            position: relative;
+            display: grid;
+            grid-template-columns: 130px 150px;
+            column-gap: 55px;
+        }
+        &__round {
+            &::after {
+                bottom: unset;
+                top: 26px;
+                right: -95%;
+                transform: rotate(270deg) scaleX(-1);
+            }
+        }
+        &__num {
+            position: absolute;
+            top: -40px;
+            left: 44px;
+        }
+        &__descr {
+            text-align: left;
+            margin-top: 20px;
+            font-size: 13px;
+            line-height: 15px;
+        }
+    }
 }
 
 @media (max-width: 374px) {

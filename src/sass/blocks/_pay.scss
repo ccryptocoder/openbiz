@@ -21,11 +21,21 @@
 }
 
 @media (max-width: 767px) {
-    
+    .pay {
+        &__descr {
+            width: 100%;
+        }
+    }
 }
 
 @media (max-width: 575px) {
-    
+    .pay {
+        &__descr {
+            width: 97%;
+            font-size: 14px;
+            line-height: 135.4%; /* or 19px */
+        }
+    }
 }
 
 @media (max-width: 374px) {

@@ -5,3 +5,10 @@
     color: #154D54;
     text-align: center;
 }
+
+@media (max-width: 575px) {
+    .section-title {
+        font-size: 26px;
+        line-height: 31px;
+    }
+}
