@@ -38,4 +38,20 @@ window.addEventListener('DOMContentLoaded', () => {
             serviceTabs[index].classList.add('service__tab_active');
         });
     });
+
+    //меню в мобильной версии 
+    let hamburger = document.querySelector('.menu__hamburger');
+    let menu = document.querySelector('.menu__list');
+    let menuItem = Array.from(document.querySelectorAll('.menu__list-item'));
+
+    hamburger.addEventListener('click', () => {
+        menu.classList.toggle('menu__list_active')
+        hamburger.classList.toggle('menu__hamburger_active');
+    });
+
+    menuItem.forEach(item => {
+        item.addEventListener('click', () => {
+            menu.classList.toggle('menu__list_active')
+        })
+    });
 });

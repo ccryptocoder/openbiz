@@ -22,7 +22,9 @@
 }
 
 @media (max-width: 767px) {
-    
+    .container {
+        width: 550px;
+    }
 }
 
 @media (max-width: 575px) {
