@@ -26,3 +26,9 @@
         line-height: 15px;
     }
 }
+
+@media (max-width: 374px) {
+    .btn {
+        padding: 15px 20px;
+    }
+}

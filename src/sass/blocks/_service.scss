@@ -430,6 +430,9 @@
 
 @media (max-width: 374px) {
     .service {
+        &__item {
+            padding: 25px 2px 30px;
+        }
         .si {
             &-descr {
                 width: 280px;
