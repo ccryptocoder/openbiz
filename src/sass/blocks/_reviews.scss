@@ -20,6 +20,37 @@
         line-height: 18px;
         text-align: center;
         color: #FFFFFF;
+        &::before, &::after {
+            position: absolute;
+            font-weight: 700;
+            font-size: 96px;
+            line-height: 113px;
+        }
+        &::before {
+            content: '“';
+            top: 0;
+            left: 0;
+        }
+        &::after {
+            content: '”';
+            bottom: 0;
+            right: 0;
+        }
+        &:nth-child(1) {
+            &::before, &::after {
+                color: #FF9D00;
+            }
+        }
+        &:nth-child(2) {
+            &::before, &::after {
+                color: #A551A3;
+            }
+        }
+        &:nth-child(3) {
+            &::before, &::after {
+                color: #4B78B3;
+            }
+        }
         &-title {
             margin-top: 80px;
             font-weight: 700;
@@ -34,6 +65,5 @@
                 left: -8px;
             }
         }
-        
     }
 }
