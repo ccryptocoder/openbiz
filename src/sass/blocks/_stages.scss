@@ -197,5 +197,17 @@
 }
 
 @media (max-width: 374px) {
-    
+    .stages {
+        &__block {
+            grid-template-columns: 130px 140px;
+            column-gap: 35px;
+        }
+        &__round {
+            width: 130px;
+            height: 130px;
+            &::after {
+                top: 18px;
+            }
+        }
+    }
 }

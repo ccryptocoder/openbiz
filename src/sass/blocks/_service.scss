@@ -429,5 +429,11 @@
 }
 
 @media (max-width: 374px) {
-    
+    .service {
+        .si {
+            &-descr {
+                width: 280px;
+            }
+        }
+    }
 }
