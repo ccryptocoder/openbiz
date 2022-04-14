@@ -1,4 +1,7 @@
 window.addEventListener('DOMContentLoaded', () => {
+    //reveal animations on scroll
+    new WOW().init();
+
     let siMore = Array.from(document.querySelectorAll('.si-more'));
     let siBtnMore = Array.from(document.querySelectorAll('.si-btn-more'));
 
