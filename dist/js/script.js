@@ -52,6 +52,7 @@ window.addEventListener('DOMContentLoaded', () => {
     menuItem.forEach(item => {
         item.addEventListener('click', () => {
             menu.classList.toggle('menu__list_active')
+            hamburger.classList.toggle('menu__hamburger_active');
         })
     });
 });
