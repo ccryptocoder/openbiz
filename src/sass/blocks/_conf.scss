@@ -39,3 +39,37 @@
         margin-top: 25px;
     }
 }
+
+@media (max-width: 1199px) {
+    .conf {
+        &__grid {
+            column-gap: 60px;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .conf {
+        padding-bottom: 120px;
+        &__round {
+            width: 320px;
+            height: 320px;
+        }
+        &__grid {
+            grid-template-columns: 320px 390px;
+            column-gap: 40px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    
+}
+
+@media (max-width: 575px) {
+    
+}
+
+@media (max-width: 374px) {
+    
+}

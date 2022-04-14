@@ -10,3 +10,24 @@
         color: #939393;
     }
 }
+
+@media (max-width: 991px) {
+    .pay {
+        &__descr {
+            width: 550px;
+            margin: 30px auto 0;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    
+}
+
+@media (max-width: 575px) {
+    
+}
+
+@media (max-width: 374px) {
+    
+}

@@ -78,3 +78,48 @@
     }
 }
 
+@media (max-width: 1439px) {
+    .promo {
+        &__info {
+            right: 20px;
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+    
+}
+
+@media (max-width: 991px) {
+    .promo {
+        padding: 170px 0 20px;
+        min-height: 580px;
+        &__main {
+            width: 500px;
+        }
+        &__title {
+            font-size: 34px;
+            line-height: 44px;
+        }
+        &__descr {
+            margin-top: 25px;
+            font-size: 16px;
+            line-height: 20px;
+        }
+        &__info {
+            bottom: -90px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    
+}
+
+@media (max-width: 575px) {
+    
+}
+
+@media (max-width: 374px) {
+
+}

@@ -41,3 +41,35 @@
         }
     }
 }
+
+@media (max-width: 991px) {
+    .header {
+        &__logo {
+            img {
+                width: 87px;
+                height: 102px;
+            }
+        }
+    }
+    .menu {
+        &__list {
+            &-item {
+                &:not(:last-child) {
+                    margin-right: 35px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    
+}
+
+@media (max-width: 575px) {
+    
+}
+
+@media (max-width: 374px) {
+    
+}

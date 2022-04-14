@@ -130,3 +130,38 @@
         }
     }
 }
+
+@media (max-width: 1439px) {
+    .stages {
+        &__grid {
+            grid-template-columns: repeat(6,135px);
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+    .stages {
+        &__grid {
+            grid-template-columns: repeat(3,165px);
+            grid-template-rows: auto auto;
+            row-gap: 30px;
+            column-gap: 100px;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    
+}
+
+@media (max-width: 767px) {
+    
+}
+
+@media (max-width: 575px) {
+    
+}
+
+@media (max-width: 374px) {
+    
+}

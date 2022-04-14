@@ -48,3 +48,33 @@
         }
     }
 }
+
+@media (max-width: 1199px) {
+    .reasons {
+        &__grid {
+            column-gap: 110px;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .reasons {
+        padding: 130px 0 80px;
+        &__grid {
+            grid-template-columns: repeat(2,210px);
+            column-gap: 130px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    
+}
+
+@media (max-width: 575px) {
+    
+}
+
+@media (max-width: 374px) {
+    
+}
