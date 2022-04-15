@@ -68,4 +68,19 @@ window.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+    //service popup
+    let sOverlay = document.querySelector('.service__overlay');
+    let siBtns = Array.from(document.querySelectorAll('.si-btn'));
+
+    siBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            sOverlay.classList.add('service__overlay_active');
+        });
+    });
+    //hide form when user clicks overlay
+    sOverlay.addEventListener('click', (e) => {
+        e.target.classList.remove('service__overlay_active');
+    })
 });
