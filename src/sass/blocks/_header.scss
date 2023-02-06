@@ -95,6 +95,12 @@
             &::after {
                 bottom: 7px;
             }
+            &_dark {
+                background: #154d54;
+                &::before, &::after {
+                    background: #154d54;
+                }
+            }
             &_active {
                 background: rgba(255, 255, 255, 0);
                 &::before {
@@ -104,6 +110,9 @@
                 &::after {
                     bottom: unset;
                     transform: rotate(135deg);
+                }
+                &::before, &::after {
+                    background: rgba(255, 255, 255, 1);
                 }
             }
         }
@@ -139,7 +148,16 @@
 
 @media (max-width: 575px) {
     .header {
+        position: fixed;
         padding: 5px 0;
+        height: 90px;
+        transition: all .3s;
+        &__logo {
+            img {
+                width: 70px;
+                height: 80px;
+            }
+        }
     }
     .menu {
         position: fixed;
