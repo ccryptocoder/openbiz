@@ -22,27 +22,38 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 
     //переключение между вкладками Услуги
-    let serviceTabBtns = Array.from(document.querySelectorAll('.service__group-btn'));
-    let serviceBtnSlider = document.querySelector('.service__group-slider');
-    let serviceTabs = Array.from(document.querySelectorAll('.service__tab'));
+    const serviceTabBtns = Array.from(document.querySelectorAll('.service__group-btn'));
+    const serviceBtnSlider = document.querySelector('.service__group-slider');
+    const serviceTabs = Array.from(document.querySelectorAll('.service__tab'));
 
     serviceTabBtns.forEach((btn, index) => {
         btn.addEventListener('click', (e) => {
             e.preventDefault();
-            serviceBtnSlider.classList.toggle('service__group-slider_active');
-            serviceTabs.forEach(tab => {
-                if(tab.classList.contains('service__tab_active')) {
-                    tab.classList.remove('service__tab_active')
-                }
-            });
-            serviceTabs[index].classList.add('service__tab_active');
+            
+            if(e.currentTarget.classList.contains('active')) {
+                return;
+            } else {
+                serviceTabBtns.forEach(btn => {
+                    btn.classList.remove('active');
+                })
+
+                e.currentTarget.classList.add('active');
+
+                serviceBtnSlider.classList.toggle('service__group-slider_active');
+                serviceTabs.forEach(tab => {
+                    if(tab.classList.contains('service__tab_active')) {
+                        tab.classList.remove('service__tab_active')
+                    }
+                });
+                serviceTabs[index].classList.add('service__tab_active');
+            }            
         });
     });
 
     //меню в мобильной версии 
-    let hamburger = document.querySelector('.menu__hamburger');
-    let menuList = document.querySelector('.menu__list');
-    let menuItem = Array.from(document.querySelectorAll('.menu__list-item'));
+    const hamburger = document.querySelector('.menu__hamburger');
+    const menuList = document.querySelector('.menu__list');
+    const menuItem = Array.from(document.querySelectorAll('.menu__list-item'));
 
     hamburger.addEventListener('click', () => {
         menuList.classList.toggle('menu__list_active')
@@ -57,7 +68,7 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 
     //fixed menu
-    let nav = document.querySelector('.header');
+    const nav = document.querySelector('.header');
 
     if (window.innerWidth < 768) {
         window.addEventListener('scroll', () => {
