@@ -57,14 +57,16 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 
     //fixed menu
-    let nav = document.querySelector('.menu');
+    let nav = document.querySelector('.header');
 
     if (window.innerWidth < 768) {
         window.addEventListener('scroll', () => {
             if (window.pageYOffset > 30 || document.documentElement.scrollTop > 30) {
-                nav.style.backgroundColor = 'rgba(0,0,0,.3)';
+                nav.style.backgroundColor = 'rgba(242,244,248,1)';
+                hamburger.classList.add('menu__hamburger_dark');
             }else {
                 nav.style.backgroundColor = 'rgba(0,0,0,0)';
+                hamburger.classList.remove('menu__hamburger_dark');
             }
         });
     }
